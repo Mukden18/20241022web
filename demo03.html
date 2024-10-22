@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>修改属性</title>
+    <script>
+        let flag = 1;
+        function changepic() {
+            let myImg = document.getElementById("Img")[0];
+            if (flag) {
+                myImg.setAttribute("src", "2.png");
+                alert("属性修改成功！");
+                flag = 0;
+            } else {
+                myImg.setAttribute("src", "3.png");
+                flag = 1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="myImg" src="3.png" onclick="changepic()" alt="">
+</body>
+</html>
